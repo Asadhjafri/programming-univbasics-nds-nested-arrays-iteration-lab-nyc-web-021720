@@ -1,15 +1,12 @@
 def join_ingredients(src)
-  array_1 = src
   array_2 = []
-    row_index = 0
-    while row_index < array_1.count do
-      element_index = 0
-      while element_index < array_1[row_index].count do
-        created_string = "I love " + array_1[row_index][element_index] + " and " + array_1[row_index][element_index +1]
-        array_2 << created_string
-      end
-      row_index += 1
-    end
+  index = 0
+  while index < src.length do
+    inner = src[index]
+    array_2 << "I love #{inner[0]} and #{inner[1]} on my pizza"
+    index += 1
+  end
+  array_2
 end
 
 def find_greater_pair(src)
