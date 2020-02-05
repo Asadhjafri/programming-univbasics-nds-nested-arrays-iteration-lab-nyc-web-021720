@@ -7,7 +7,7 @@ def join_ingredients(src)
       while element_index < array_1[row_index].count do
         created_string = "I love " + array_1[row_index][element_index]
         element_index += 1
-        created_string += " and " + array_1[row_index][element_index +1]
+        created_string += " and " + array_1[row_index][element_index]
         array_2 << created_string
       end
       row_index += 1
