@@ -18,8 +18,13 @@ def find_greater_pair(src)
   while index < src.length do
     inner = src[index]
     if inner[0] < inner[1]
-      
+      array_3 << inner[1]
+    else
+      array_3 << inner[0]
+    end
+    index += 1
   end
+  array_3
 end
 
 def total_even_pairs(src)
